@@ -1,10 +1,13 @@
 import React from "react";
 
-const Persons = ({ name, number }) => {
+const Persons = ({ name, number, handleDelete }) => {
   return (
-    <p>
-      {name} {number}
-    </p>
+    <div>
+      <span>
+        {name} {number}
+      </span>
+      <button onClick={handleDelete}>delete</button>
+    </div>
   );
 };
 

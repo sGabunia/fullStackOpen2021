@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-// test macos
+// test macostestß
 
 const App = (props) => {
   const [selected, setSelected] = useState(0);
@@ -10,6 +10,8 @@ const App = (props) => {
   const getRandomAnecdote = () => {
     setSelected(Math.floor(Math.random() * props.anecdotes.length));
   };
+
+  const name = "Sergo ";
 
   const calculateVotes = () => {
     const copy = [...votes];
